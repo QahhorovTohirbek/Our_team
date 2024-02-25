@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team</title>
+    <style>
+       body {
+            margin: 0;
+            padding: 0;
+            background: url('{%static '/images/bg.jpg'%}');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: top;
+            font-family: sans-serif;
+            color: white;
+       } 
+
+       .team {
+            margin: 0;
+            padding: 20px 0;
+            max-width: 1440px;
+            max-height: 1080px;
+            background-color: hsl(0, 0%, 0%, 0.61);
+       }
+
+       .team-title {
+            margin: 0 50px 26px 50px;
+            padding: 60px 50px 30px 50px;
+            text-align: center;
+       }
+
+       .team-title-bottom {
+            margin-left: 380px;
+            width: 398px;
+            height: 5px;
+            background: url('{%static '/images/line.jpg'%}');
+       }
+
+       .about-team {
+            max-width: 1000px;
+            max-height: 400px;
+            padding: 10px;
+            margin: 0 190px;
+       }
+       .team-container {
+            width: 1335px;
+            height: 390px;
+            margin-left: 10px;
+       }
+
+       .people-of-team {
+        margin: 50px 40px 0 40px;
+        width: 250px;
+        max-height: 800px;
+        text-align: center;
+        float: left;
+       }
+
+       .img1, .img2, .img3, .img4 {
+            width: 250px;
+            height: 250px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background: url('{%static '/images/img1.jpg'%}');
+            background-size: cover;
+            background-position: center;
+       }
+
+       .img2 {
+            background: url('{%static '/images/img2.jpeg'%}');
+            background-size: cover;
+            background-position: center;
+       }
+       
+       .img3 {
+            background: url('{%static '/images/img3.png'%}');
+            background-size: cover;
+            background-position: center;
+       }
+
+       .img4 {
+            background: url('{%static '/images/img4.webp'%}');
+            background-size: cover;
+            background-position: center;
+       }
+
+       .name, .position {
+            margin: 5px 0;
+       }
+
+    </style>
+</head>
+<body>
+    <section class="team">
+        <div class="team-title">
+            <h1>MEET OUR TEAM</h1>
+            <div class="team-title-bottom"></div>
+        </div>
+        <div>
+            <p class="about-team">
+                Nullam fermentum metus dolor, non suscipit neque ornare id.
+                Curabitur fermentum ac lectus vitae
+                ultrices. In faucibus nisl massa, et elementum orci placerat at
+                In iaculis faucibus felis pharetra
+                lacinia. Nulla ultrices tincidunt eros at adipiscing. Aliquam
+                porttitor volutpat dictum. Vestibulum
+                vestibulum viverra placerat.
+            </p>
+            <div class="team-container">
+                <div class="people-of-team">
+                    <div class="img1"></div>
+                    <h2 class="name">Qahhorov Tohirbek</h2>
+                    <h3 class="position">Backend developer</h3>
+                </div>
+                <div class="people-of-team">
+                    <div class="img2"></div>
+                    <h2 class="name">Emely Watson</h2>
+                    <h3 class="position">Frontend developer</h3>
+                </div>
+                <div class="people-of-team">
+                    <div class="img3"></div>
+                    <h2 class="name">Adam Smith</h2>
+                    <h3 class="position">Backend developer</h3>
+                </div>
+                <div class="people-of-team">
+                    <div class="img4"></div>
+                    <h2 class="name">Jon Henry</h2>
+                    <h3 class="position">Designer</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
